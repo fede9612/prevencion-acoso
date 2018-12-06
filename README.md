@@ -1,6 +1,7 @@
 > Incluir aquí las medallas de Waffle y Travis.
 
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/fede9612/prevencion-acoso.svg?columns=backlog)](https://waffle.io/fede9612/prevencion-acoso)
+[![Build Status](https://travis-ci.com/fede9612/prevencion-acoso.svg?branch=master)](https://travis-ci.com/fede9612/prevencion-acoso)
 
 # Prevención acoso
 
