@@ -9,18 +9,17 @@
 
 Explicar aquí cómo instalar lo siguiente:
 * JDK 1.8
-
   1.Ejecutamos la consola y escribimos el siguientes comandos
   ```console
   root@root:~$ sudo add-apt-repository ppa:webupd8team/java
   root@root:~$ sudo apt-get update
   root@root:~$ sudo apt-get install oracle-java8-installer
   ```
-  En la instalación java instala un paquete de configuración pero para mejor seguridad de que sea instalado ejecutaremos
+  2.En la instalación java instala un paquete de configuración pero para mejor seguridad de que sea instalado ejecutaremos
   ```console
   root@root:~$ sudo apt-get install oracle-java8-set-default
   ```
-  Y finalmente para comprobar que java 8 está instalado ejecutaremos
+  3.Y finalmente para comprobar que java 8 está instalado ejecutaremos
    ```console
   root@root:~$ java -version
   
@@ -30,6 +29,26 @@ Explicar aquí cómo instalar lo siguiente:
   ```
   
 * Maven
+
+ 1. Iremos al [enlace](https://maven.apache.org/download.cgi) y descargaremos Maven.
+  
+  2. Descomprimimos el archivo y ejecutamos los siguientes comandos
+  ```console
+    root@root:~$ sudo mv ~/Downloads/apache-maven-3.3.9 /opt
+    root@root:~$ sudo gedit /etc/bash.bashrc
+  ```
+   Al final del archivo añadir las siguientes líneas
+  ```console
+    export MAVEN_HOME=/opt/apache-maven-3.3.9
+    export M2_HOME=/opt/apache-maven-3.3.9
+    export PATH=$PATH:$M2_HOME/bin
+  ```
+   Cerramos el archivo
+  
+  3. Finalmente ejecutaremos lo siguiente para ver si se instaló correctamente
+   ```console
+    mvn -version
+  ```
 * MySQL
 * Eclipse
 
