@@ -56,13 +56,18 @@ Explicar aquí cómo instalar lo siguiente:
 
 ## Configuración del entorno
 
-Explicar aquí cómo hacer lo siguiente:
 * Crear la base de datos.
+
+   Crearemos la base de datos accediendo a una consola y entrar el entorno de mysql con `mysql -u nombreDeUsuario -p password`, una vez dentro ejecutamos el comando`create database prevencionAcoso` 
 * Cargar los datos iniciales.
+
+  Dentro del IDE Eclipse buscaremos la clase llamada "DataGenerator", encima de ella precionaremos click derecho -> Run as -> Java Application
 * Importar el proyecto en Eclipse.
 
 ## Hacer funcionar la aplicación desde consola Linux
  1. Abrimos una consola situados en el directorio donde tenemos nuestro proyecto.
- 1. Escribimos mvn jetty:run para iniciar el server y visualizar la página en la url localhost:8080
+ 1. Escribimos el siguiente comando para iniciar el server y visualizar la aplicación en la url localhost:8080
+     ```console
+     root@root:~$ mvn jetty:run
  1. Para detener el server precionamos `Ctrl + c`
  
