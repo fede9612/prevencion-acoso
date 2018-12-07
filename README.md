@@ -34,8 +34,8 @@ Explicar aquí cómo instalar lo siguiente:
   
   2. Descomprimimos el archivo y ejecutamos los siguientes comandos
   ```console
-    root@root:~$ sudo mv ~/Downloads/apache-maven-3.3.9 /opt
-    root@root:~$ sudo gedit /etc/bash.bashrc
+  root@root:~$ sudo mv ~/Downloads/apache-maven-3.3.9 /opt
+  root@root:~$ sudo gedit /etc/bash.bashrc
   ```
    Al final del archivo añadir las siguientes líneas
   ```console
@@ -47,10 +47,12 @@ Explicar aquí cómo instalar lo siguiente:
   
   3. Finalmente ejecutaremos lo siguiente para ver si se instaló correctamente
    ```console
-    mvn -version
-  ```
+   root@root:~$ mvn -version
+   ```
 * MySQL
 * Eclipse
+  
+  Si ya se tiene Java instalado seguir desde el [tutorial](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/) paso 2, sino empezar desdes el paso 1
 
 ## Configuración del entorno
 
