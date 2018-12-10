@@ -7,7 +7,6 @@
 
 ## Software necesario
 
-Explicar aquí cómo instalar lo siguiente:
 * JDK 1.8
   1.Ejecutamos la consola y escribimos el siguientes comandos
   ```console
@@ -50,9 +49,11 @@ Explicar aquí cómo instalar lo siguiente:
    root@root:~$ mvn -version
    ```
 * MySQL
+
+  Acceder al siguiente [link](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04) y seguir los pasos.
 * Eclipse
   
-  Si ya se tiene Java instalado seguir desde el [tutorial](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/) paso 2, sino empezar desdes el paso 1
+  Si ya se tiene Java instalado seguir desde el [tutorial](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/) paso 2, sino empezar desdes el paso 1.
 
 ## Configuración del entorno
 
@@ -63,6 +64,8 @@ Explicar aquí cómo instalar lo siguiente:
 
   Dentro del IDE Eclipse buscaremos la clase llamada "DataGenerator", encima de ella precionaremos click derecho -> Run as -> Java Application
 * Importar el proyecto en Eclipse.
+
+  Dentro del IDE Eclipse nos iremos a File -> Import -> buscamos Existing Maven Projects -> buscamos el directorio donde se encuentra nuestro repo, lo seleccionamos y presionamos Finish.
 
 ## Hacer funcionar la aplicación desde consola Linux
  1. Abrimos una consola situados en el directorio donde tenemos nuestro proyecto.
