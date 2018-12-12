@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.com/fede9612/prevencion-acoso.svg?branch=master)](https://travis-ci.com/fede9612/prevencion-acoso)
 
 # Prevención acoso
+ Esta aplicación nos permitirá realizar el primer paso de una denuncia sobre [acoso](https://www.argentina.gob.ar/justiciacerca/acoso-callejero).
 
 ## Software necesario
 
