@@ -7,7 +7,7 @@
 
 ## Software necesario
 
-* OpenJDK 1.8
+### * OpenJDK 1.8
  
  1.Ejecutamos la consola y escribimos el siguientes comandos para actualizar el índice de paquetes.
   ```console
@@ -28,16 +28,16 @@
   
   Para más información acerca de la configuración visite el siguiente [link](https://www.digitalocean.com/community/tutorials/como-instalar-java-con-apt-get-en-ubuntu-16-04-es)
   
-* Maven
+### * Maven
 
  1. Ejecutamos la consola y escribimos el siguientes comandos para actualizar el índice de paquetes.
  ```console
- root@root:~$ sudo apt update
+ root@root:~$ sudo apt-get update
  ```
   
   2. Luego instalamos Maven con el siguiente comando
   ```console
-  root@root:~$ sudo apt install maven
+  root@root:~$ sudo apt-get install maven
   ```  
   3. Finalmente ejecutaremos lo siguiente para ver si se instaló correctamente
    ```console
@@ -52,12 +52,33 @@
     Default locale: en_US, platform encoding: ISO-8859-1
     OS name: "linux", version: "4.15.0-36-generic", arch: "amd64", family: "unix"
    ```
-* MySQL
+### * MySQL
 
-  Acceder al siguiente [link](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04) y seguir los pasos.
-* Eclipse
+ 1. Ejecutamos la consola y escribimos el siguientes comandos para actualizar el índice de paquetes.
+ ```console
+ root@root:~$ sudo apt-get update
+ ```
+ 2. Para iniciar la instalación ejecutaremos el siguiente comando
+  ```console
+ root@root:~$ sudo apt-get install mysql-server
+ ```
+ Para más información de configuración visite el siguiente [link](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04).
+### * Eclipse
+ #### Instalación por consola  
+ 
+  1.Ejecutamos la consola y escribimos el siguientes comandos para actualizar el índice de paquetes.
+  ```console
+  root@root:~$ sudo apt-get update
+  ```
+  2. Iniciamos la instalación
+  ```console
+  root@root:~$ sudo apt-get install eclipse-platform
+  ```
+  Luego ya podremos iniciar Eclipse
   
-  Si ya se tiene Java instalado seguir desde el [tutorial](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/) paso 2, sino empezar desdes el paso 1.
+---
+ #### Instalación gráfica
+ Si ya se tiene Java instalado seguir desde el [tutorial](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/) paso 2, sino empezar desdes el paso 1.
 
 ## Configuración del entorno
 
