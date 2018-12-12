@@ -1,5 +1,3 @@
-> Incluir aquí las medallas de Waffle y Travis.
-
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/fede9612/prevencion-acoso.svg?columns=backlog)](https://waffle.io/fede9612/prevencion-acoso)
 [![Build Status](https://travis-ci.com/fede9612/prevencion-acoso.svg?branch=master)](https://travis-ci.com/fede9612/prevencion-acoso)
 
@@ -82,20 +80,35 @@
 
 ## Configuración del entorno
 
-* Crear la base de datos.
+#### * Crear la base de datos.
 
    Crearemos la base de datos accediendo a una consola y entrar el entorno de mysql con `mysql -u nombreDeUsuario -p password`, una vez dentro ejecutamos el comando`create database prevencionAcoso` 
-* Cargar los datos iniciales.
+#### * Cargar los datos iniciales.
 
   Dentro del IDE Eclipse buscaremos la clase llamada "DataGenerator", encima de ella precionaremos click derecho -> Run as -> Java Application
-* Importar el proyecto en Eclipse.
+#### * Importar el proyecto en Eclipse.
 
   Dentro del IDE Eclipse nos iremos a File -> Import -> buscamos Existing Maven Projects -> buscamos el directorio donde se encuentra nuestro repo, lo seleccionamos y presionamos Finish.
 
 ## Hacer funcionar la aplicación desde consola Linux
- 1. Abrimos una consola situados en el directorio donde tenemos nuestro proyecto.
- 1. Escribimos el siguiente comando para iniciar el server y visualizar la aplicación en la url localhost:8080
+ #### Iniciar servidor
+  1. Abrimos una consola situados en el directorio donde tenemos nuestro proyecto.
+  1. Escribimos el siguiente comando para iniciar el server y visualizar la aplicación en la url localhost:8080
+      ```console
+      root@root:~$ mvn jetty:run
+  1. Para detener el server precionamos `Ctrl + c`
+
+ #### Ejecutar los Test
+  1. Abrimos una consola situados en el directorio donde tenemos nuestro proyecto.
+  1. Escribimos el siguiente comando
      ```console
-     root@root:~$ mvn jetty:run
- 1. Para detener el server precionamos `Ctrl + c`
+     root@root:~$ mvn test
+     ```
+ #### Compilar proyecto
+  1. Abrimos una consola situados en el directorio donde tenemos nuestro proyecto.
+  1. Escribimos el siguiente comando
+     ```console
+     root@root:~$ mvn compile
+     ```
+  
  
