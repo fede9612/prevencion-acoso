@@ -30,24 +30,27 @@
   
 * Maven
 
- 1. Iremos al [enlace](https://maven.apache.org/download.cgi) y descargaremos Maven.
+ 1. Ejecutamos la consola y escribimos el siguientes comandos para actualizar el índice de paquetes.
+ ```console
+ root@root:~$ sudo apt update
+ ```
   
-  2. Descomprimimos el archivo y ejecutamos los siguientes comandos
+  2. Luego instalamos Maven con el siguiente comando
   ```console
-  root@root:~$ sudo mv ~/Downloads/apache-maven-3.3.9 /opt
-  root@root:~$ sudo gedit /etc/bash.bashrc
-  ```
-   Al final del archivo añadir las siguientes líneas
-  ```console
-    export MAVEN_HOME=/opt/apache-maven-3.3.9
-    export M2_HOME=/opt/apache-maven-3.3.9
-    export PATH=$PATH:$M2_HOME/bin
-  ```
-   Cerramos el archivo
-  
+  root@root:~$ sudo apt install maven
+  ```  
   3. Finalmente ejecutaremos lo siguiente para ver si se instaló correctamente
    ```console
    root@root:~$ mvn -version
+   ```
+   Mostrará este mensaje
+   ```console
+    Apache Maven 3.5.2
+    Maven home: /usr/share/maven
+    Java version: 10.0.2, vendor: Oracle Corporation
+    Java home: /usr/lib/jvm/java-11-openjdk-amd64
+    Default locale: en_US, platform encoding: ISO-8859-1
+    OS name: "linux", version: "4.15.0-36-generic", arch: "amd64", family: "unix"
    ```
 * MySQL
 
