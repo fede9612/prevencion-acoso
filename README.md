@@ -7,16 +7,15 @@
 
 ## Software necesario
 
-* JDK 1.8
-  1.Ejecutamos la consola y escribimos el siguientes comandos
+* OpenJDK 1.8
+ 
+ 1.Ejecutamos la consola y escribimos el siguientes comandos para actualizar el índice de paquetes.
   ```console
-  root@root:~$ sudo add-apt-repository ppa:webupd8team/java
   root@root:~$ sudo apt-get update
-  root@root:~$ sudo apt-get install oracle-java8-installer
   ```
-  2.En la instalación java instala un paquete de configuración pero para mejor seguridad de que sea instalado ejecutaremos
+  2.Luego ejecutaremos la siguiente linea para realizar la instalación
   ```console
-  root@root:~$ sudo apt-get install oracle-java8-set-default
+  root@root:~$ sudo apt-get install default-jdk
   ```
   3.Y finalmente para comprobar que java 8 está instalado ejecutaremos
    ```console
@@ -26,6 +25,8 @@
   Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
   Java HotSpot(TM) 64-Bit Server VM (build 25.171-b12, mixed mode)
   ```
+  
+  Para más información acerca de la configuración visite el siguiente [link](https://www.digitalocean.com/community/tutorials/como-instalar-java-con-apt-get-en-ubuntu-16-04-es)
   
 * Maven
 
